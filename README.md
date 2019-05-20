@@ -7,6 +7,8 @@ Akzeptiert eine beliebige Liste von Verzeichnissen und gibt eine Zusammenfassung
 
 Einmal eine Zusammenfassung der gefundenen Dateitypen (`directory`, `regular file`, `symlink`,...) mitsamt der Gesamtzahl und Gesamtgröße und dann nochmal das gleiche für die gefundenen Dateiendungen (`.txt`, `.png`, `.pdf`,...).
 
+![Ausgabe von files.sh](https://raw.githubusercontent.com/datenbauer/shell-spielereien/master/files-sh_demo.png)
+
 ### palindrome.sh
 Liest die Standardeingabe zeilenweise und gibt ein Wort wieder aus, falls es sich um ein Palindrom handelt.
 
