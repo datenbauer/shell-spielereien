@@ -19,3 +19,17 @@ Die Eingabe kann interaktiv im Terminal erfolgen oder beispielsweise aus einer D
 ```shell
 $ ./palindrome.sh < eingabedatei.txt
 ```
+
+### pdf2txt.sh
+Wandelt eine pdf-Datei in eine Textdatei um. Nützlich für Scans alter Bücher, wie man sie beispielsweise auf der Seite [archive.org] reichlich finden kann. Die Digitalisierung solcher Bücher wäre händisch viel zu aufwändig und die manchmal schon eingebettete OCR ist in der Hinsicht praktisch keine Hilfe.
+
+Das Skript setzt die Programme `pdfinfo`, `pdftoppm` und `tesseract-ocr` voraus. Für Tesseract sollten noch die gewünschten Sprachpakete zusätzlich heruntergeladen werden. Unter Ubuntu sollte folgender Befehl reichen:
+```
+$ sudo apt install poppler-utils tesseract-ocr
+```
+
+Das Sprachpaket für Französisch kann so installiert werden:
+```
+$ sudo apt install tesseract-ocr-fra
+```
+Eine vollständige Liste aller verfügbaren sprachen ist mit `tesseract --list-langs` einsehbar.
