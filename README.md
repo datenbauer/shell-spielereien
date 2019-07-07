@@ -21,14 +21,14 @@ $ ./palindrome.sh < eingabedatei.txt
 ```
 
 ### pdf2txt.sh
-Wandelt eine pdf-Datei in eine Textdatei um. Nützlich für Scans alter Bücher, wie man sie beispielsweise auf der Seite [archive.org] reichlich finden kann. Die Digitalisierung solcher Bücher wäre händisch viel zu aufwändig und die manchmal schon eingebettete OCR ist in der Hinsicht praktisch keine Hilfe.
+Ein Skript, das OCR einsetzt, um bildlastige pdf-Dateien in reine Textdateien umzuwandeln.  Nützlich für Scans alter Bücher, wie man sie beispielsweise auf der Seite [archive.org] reichlich finden kann. Die Digitalisierung solcher Bücher wäre händisch viel zu aufwändig und die manchmal schon eingebettete OCR ist in der Hinsicht praktisch keine Hilfe.
 
-Das Skript setzt die Programme `pdfinfo`, `pdftoppm` und `tesseract-ocr` voraus. Für Tesseract sollten noch die gewünschten Sprachpakete zusätzlich heruntergeladen werden. Unter Ubuntu sollte folgender Befehl reichen:
+Das Skript setzt die Programme `pdfinfo`, `pdftoppm` und `tesseract-ocr` voraus. Für Tesseract sollten noch die gewünschten Sprachpakete zusätzlich heruntergeladen werden. Die Installation der Abhängigkeiten unter Ubuntu:
 ```
 $ sudo apt install poppler-utils tesseract-ocr
 ```
 
-Das Sprachpaket für Französisch kann so installiert werden:
+Das Sprachpaket für bspw. Französisch kann so installiert werden:
 ```
 $ sudo apt install tesseract-ocr-fra
 ```
